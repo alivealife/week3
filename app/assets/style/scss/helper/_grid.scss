@@ -16,8 +16,8 @@
     }
 }
 
-@mixin mobile480 {
-    @media(max-width: 480px){
+@mixin mobile375 {
+    @media(max-width: 375px){
         @content
     }
 }

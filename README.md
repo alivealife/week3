@@ -9,7 +9,7 @@
 
 ## 說明
 
-除了 Boostrap CSS 與 Boostrap JavaScript 需要掛 CDN 之外，本身已經內建打包 jQuery 3.5.1。
+除了 Bootstrap CSS 與 Bootstrap JavaScript 需要掛 CDN 之外，本身已經內建打包 jQuery 3.5.1。
 
 若有需要調整相關路徑參數可在 envOptions.js 中調整，但建議不要隨意調整導致 Gulp 無法正常運行。
 
@@ -21,7 +21,7 @@
 
 圖片新增時也會自動刷新。
 
-## 部署 gh-pagse 流程說明
+## 部署 gh-pages 流程說明
 
 部署前請務必先將該 Gulp 原始碼上傳到 GitHub Repositories 也就是初始化 GitHub，因此通常第一步驟會輸入以下指令
 

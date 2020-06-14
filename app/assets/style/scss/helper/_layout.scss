@@ -1,0 +1,335 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  box-sizing: border-box; // 將所有內容設為 border-box
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; // 繼承父層 box-sizing 設定
+}
+
+a {
+  text-decoration: none;
+}
+
+// img {
+//   display: block;
+// }
+
+.d-flex {
+  display: flex;
+}
+
+.bg-cover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+
+  @include padpro() {
+    width: 100%;
+  }
+}
+
+.container-s {
+  width: 792px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: $color-main;
+  padding: 30px 88px;
+  justify-content: space-between;
+  align-items: center;
+
+  @include padpro() {
+    padding: 30px 48px;
+  }
+
+  @include mobile767() {
+    text-align: center;
+    position: relative;
+    padding: 10px 0;
+    justify-content: center;
+  }
+
+  a {
+    color: #FFFFFF;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.ham-icon {
+  display: none;
+
+  @include mobile767() {
+    display: block;
+    position: absolute;
+    left: 13px;
+  }
+}
+
+.nav-menu {
+  // display: flex;
+
+  @include mobile767() {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    max-height: 0px;
+    transition: all 0.8s;
+    overflow: hidden;
+    z-index: 120;
+
+    &.active {
+      max-height: 300px;
+    }
+
+    a {
+      display: block;
+      background: $color-main;
+      border-top: 1px solid #FFFFFF;
+      padding: 16px 0;
+    }
+  }
+
+  li:not(:last-child) {
+    margin-right: 64px;
+
+    @include padpro() {
+      margin-right: 40px;
+    }
+
+    @include mobile767() {
+      margin-right: 0;
+    }
+  }
+
+}
+
+.footer {
+  background-color: $color-main;
+  padding-top: 36px;
+  padding-bottom: 28px;
+
+  @include padpro() {
+    padding: 48px 40px;
+  }
+
+  @include mobile767 {
+    display: none;
+  }
+
+  a {
+    color: #FFFFFF;
+  }
+}
+
+.footer-menu {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.menu-box {
+
+  @include mobile767 {
+    display: none;
+  }
+
+  li {
+    margin-right: 48px;
+
+    @include padpro() {
+      margin-right: 40px;
+    }
+  }
+
+  a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.sns-box {
+
+  li:not(:last-child) {
+    margin-right: 32px;
+
+    @include padpro() {
+      margin-right: 24px;
+    }
+  }
+
+  img {
+    @include padpro() {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.contact-info {
+  font-size: 36px;
+  line-height: 54px;
+  border-bottom: 1px solid #FFFFFF;
+  margin-bottom: 24px;
+  font-weight: 400;
+
+  @include padpro() {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  li {
+    margin-bottom: 22px;
+  }
+}
+
+.tel {
+  margin-right: 23px;
+  vertical-align: middle;
+
+  @include padpro() {
+    margin-right: 12px;
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.email {
+  margin-right: 12px;
+  vertical-align: middle;
+
+  @include padpro() {
+    margin-right: 8px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.footer-copyright-list {
+  justify-content: space-between;
+}
+
+.footer-copyright-item {
+  align-items: center;
+
+  img {
+    margin-right: 38px;
+
+    @include padpro() {
+      display: none;
+    }
+  }
+
+  p {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+
+  a {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  a:not(:last-child) {
+    margin-right: 62px;
+
+    @include padpro() {
+      margin-right: 24px;
+    }
+  }
+}
+
+
+// mobile 用 
+.footer-mobile {
+  display: none;
+  background-color: $color-main;
+  padding: 24px 12px;
+
+  @include mobile767 {
+    display: block;
+  }
+
+  a {
+    color: #FFFFFF;
+  }
+}
+
+.footer-menu-mobile {
+  justify-content: space-between;
+  align-items: start;
+  border-bottom: 1px solid #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.contact-info-mobile {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 16px;
+  font-weight: 400;
+
+  li {
+    margin-bottom: 13px;
+  }
+}
+
+.tel-mobile {
+  width: 13px;
+  height: 13px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.email-mobile {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.sns-box-mobile {
+
+  li:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.footer-copyright-mobile {
+  position: relative;
+  color: #FFFFFF;
+}
+
+.footer-copyright-list-mobile {
+  font-size: 14px;
+  line-height: 21px;
+
+  li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.footer-logo-mobile {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 46px;
+  height: 28px;
+}

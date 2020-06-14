@@ -5,8 +5,93 @@ engine: ejs
 current: index
 ---
 
-<h1>
-  這是一段話
-</h1>
-
-<div class="box"></div>
+<main>
+  <section class="banner-index bg-cover">
+    <div class="banner-content-index container d-flex">
+      <h3>Promise-Desert 2020 早春系列</h3>
+      <h2>看得清，才能看得遠</h2>
+    </div>
+  </section>
+  <section class="about">
+    <div class="container">
+      <h2 class="section-title">用專業的心，做專業的事</h2>
+      <ul class="about-list d-flex">
+        <li>
+          <div class="about-card">
+            <img src="./assets/images/icon-dollar.svg" alt="">
+            <h4>單一價格</h4>
+            <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+          </div>
+        </li>
+        <li>
+          <div class="about-card">
+            <img src="./assets/images/icon-clock.svg" alt="">
+            <h4>20 分鐘即可取件</h4>
+            <p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
+          </div>
+        </li>
+        <li>
+          <div class="about-card">
+            <img src="./assets/images/icon-heart.svg" alt="">
+            <h4>安心售後服務</h4>
+            <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+          </div>
+        </li>
+        <li>
+          <div class="about-card">
+            <img src="./assets/images/icon-glasses.svg" alt="">
+            <h4>關於鏡片</h4>
+            <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="classic">
+    <div class="container">
+      <h2 class="section-title">經典系列鏡框</h2>
+      <ul>
+        <li class="classic-list"><img src="./assets/images/product-1.png" alt="">
+          <div class="classic-list-content">
+            <img src="./assets/images/icon-diamond.svg" alt="">
+            <p>OPTICAL</p>
+          </div>
+        </li>
+        <li class="classic-list">
+          <div class="classic-list-content">
+            <img src="./assets/images/icon-sun.svg" alt="">
+            <p>SUNGLASSES</p>
+          </div>
+          <img class="classoc-list-filter" src="./assets/images/product-2-color.png" alt="">
+        </li>
+        <li class="classic-list"><img src="./assets/images/product-3.png" alt="">
+          <div class="classic-list-content">
+            <img src="./assets/images/icon-thunder.svg" alt="">
+            <p>FUNCTIONAL</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <div class="contact">
+    <div class="container-s">
+      <h2 class="contact-title">聯絡我們</h2>
+      <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+      <form class="form" action="#">
+        <label for="name">姓名</label>
+        <input type="text" id="name" placeholder="陳小明">
+        <label for="phone">連絡電話</label>
+        <input type="text" id="phone" placeholder="0912-345-678">
+        <label for="email">電子郵件</label>
+        <input type="text" id="email" placeholder="example@email.com">
+        <label for="Reques">意見反應</label>
+        <textarea name="Reques" id="Reques" placeholder="請輸入您的意見"></textarea>
+        <div class="checkbox-area">
+          <input type="checkbox" name="check" id="check">
+          <label for="check">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+        </div>
+        <button>確認送出</button>
+      </form>
+    </div>
+  </div>
+</main>
